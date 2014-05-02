@@ -27,6 +27,7 @@ The project contains the following folders and important files:
 * ``index.html`` -- The apps html
 * ``lib/js`` -- Javascript
 * ``lib/css`` -- Strangely enough, stylesheets
+* ``lib/img`` -- Map pins
 
 License
 ----------
