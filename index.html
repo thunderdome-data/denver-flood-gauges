@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Denver flood gauges</title>
+	<link type="text/css" href="lib/css/floodstages.css" rel="stylesheet" >
+</head>
+
+<body>
+	
+	<div id="container">
+
+		<div id="dfm_flood_map_div"></div>
+        <div id="big_chart_container"></div>
+        <div id="show_all" class="hide_dims"></div>
+		<div id="chartsContainer">
+			<div id="kerc2_div" class="chartCon"></div>
+			<div id="grpc2_div" class="chartCon"></div>
+			<div id="dkkc2_div" class="chartCon"></div>
+			<div id="ftdc2_div" class="chartCon"></div>
+			<div id="fnec2_div" class="chartCon"></div>
+			<div id="fhac2_div" class="chartCon"></div>
+			<div id="bznc2_div" class="chartCon"></div>
+			<div id="mrrc2_div" class="chartCon"></div>
+			<div id="bimc2_div" class="chartCon"></div>
+			<div id="lnsc2_div" class="chartCon"></div>
+			<div id="bocc2_div" class="chartCon"></div>
+			<div id="oroc2_div" class="chartCon"></div>
+			<div id="belc2_div" class="chartCon"></div>
+			<div id="drbc2_div" class="chartCon"></div>
+			<div id="gldc2_div" class="chartCon"></div>
+			<div id="sptc2_div" class="chartCon"></div>
+			<div id="wnac2_div" class="chartCon"></div>
+		</div>
+    <div class="credits-con">
+    Sources: <a class="credits-con" href="http://waterwatch.usgs.gov/index.php?r=co&id=ww_current" target="_top">USGS</a>, Colorado DWS and <a class="credits-con" href="http://water.weather.gov/ahps/region.php?state=co" target="_top">NWS</a> <br /> Credits: Vaughn Hagerty, Nelson Hsu / DFM
+    </div>
+
+	</div>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>  
+    <script src="https://maps.googleapis.com/maps/api/js?sensor=true" type="text/javascript"></script>
+    <script src="http://data.digitalfirstmedia.com/lib/js/handlebars-1.0.rc.1.js"></script>
+    <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+    <script type="text/javascript" src="lib/js/denver_flood_gauges.js"></script>
+
+     <!--handlebars template to build main map legend-->
+
+    <script id="map-legend-template" type="text/x-handlebars-template">
+        <p><b>Marker colors</b></p>
+        <p><div class="little-square" style="background-color:#a23622"></div><span>Major flooding</span></p>
+        <p><div class="little-square" style="background-color:#d8472a"></div><span>Moderate flooding</span></p>
+        <p><div class="little-square" style="background-color:#e1755f"></div><span>Minor</span></p>
+        <p><div class="little-square" style="background-color:#6e8e5e"></div><span>No flooding</span></p>
+        <p><div class="little-square" style="background-color:#4d4d4b"></div><span>Current data unavailable</span></p>
+    </script>
+    
+
+<!--analytics-->
+<script type="text/javascript">
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-37303540-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+
+</body>
+</html>
