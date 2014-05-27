@@ -4,7 +4,12 @@ denver-flood-gauges
 What is this?
 -------------
 
-Graphs and map to show extent of flooding at NOAA guages during 2013 Colorado deluge
+Graphs and map to show extent of flooding at NOAA guages during 2013 Colorado deluge. The visualization continues to pull in live data from the gauges.
+
+Live demo: http://www.denverpost.com/2013coloradofloods/ci_24106933/colorado-flood-map-2013-river-gauges
+
+![River gauges from the height of the flooding](screenshots/gauges.png)
+
 
 Credits
 ---------
